@@ -1,1 +1,5 @@
-export class BanjoChecker {}
+export class BanjoChecker {
+  checkIfPlayingBanjo(name: string): boolean {
+    return true;
+  }
+}
