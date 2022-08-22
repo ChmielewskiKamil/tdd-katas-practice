@@ -1,4 +1,4 @@
-import { BanjoChecker } from './index';
+import { BanjoChecker } from './AreYouPlayingBanjo';
 
 describe('banjo player check', () => {
   it('exists', () => {
