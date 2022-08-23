@@ -26,6 +26,6 @@ describe('Spin single word', () => {
 describe('Spin multiple words', () => {
   it("should revert 'another warriors' to 'rehtona sroirraw'", () => {
     wordSpiner = new WordSpiner();
-    expect(wordSpiner.spinWords('another warriors').toBe('rehtona sroirraw'));
+    expect(wordSpiner.spinWords('another warriors')).toBe('rehtona sroirraw');
   });
 });
