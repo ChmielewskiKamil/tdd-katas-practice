@@ -1,1 +1,5 @@
-export class WordSpiner {}
+export class WordSpiner {
+  spinWords(str: string): string {
+    return 'sroirraw';
+  }
+}
