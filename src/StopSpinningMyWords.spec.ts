@@ -1,7 +1,7 @@
 import { WordSpiner } from './StopSpinningMyWords';
 
 let wordSpiner: WordSpiner;
-describe('Spin the words', () => {
+describe('Spin single word', () => {
   beforeEach(() => {
     wordSpiner = new WordSpiner();
   });
@@ -20,5 +20,12 @@ describe('Spin the words', () => {
 
   it('should only revert words longer than 4 letters', () => {
     expect(wordSpiner.spinWords('is')).toBe('is');
+  });
+});
+
+describe('Spin multiple words', () => {
+  it("should revert 'another warriors' to 'rehtona sroirraw'", () => {
+    wordSpiner = new WordSpiner();
+    expect(wordSpiner.spinWords('another warriors').toBe('rehtona sroirraw'));
   });
 });
