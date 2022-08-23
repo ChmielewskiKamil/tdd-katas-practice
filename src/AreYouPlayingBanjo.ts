@@ -1,5 +1,5 @@
 export class BanjoChecker {
   checkIfPlayingBanjo(name: string): boolean {
-    return true;
+    return name[0] == 'r' ? true : false;
   }
 }
