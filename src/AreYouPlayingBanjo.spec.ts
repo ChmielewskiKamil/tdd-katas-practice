@@ -5,8 +5,14 @@ describe('banjo player check', () => {
     let banjoChecker = new BanjoChecker();
     expect(banjoChecker).toBeDefined();
   });
-  it("should be able to tell if 'rob' plays banjo", () => {
+
+  it("should be able to tell that 'rob' plays banjo", () => {
     let banjoChecker = new BanjoChecker();
     expect(banjoChecker.checkIfPlayingBanjo('rob')).toBeTruthy();
+  });
+
+  it("should be able to tell that 'bob' doesn't play banjo", () => {
+    let banjoChecker = new BanjoChecker();
+    expect(banjoChecker.checkIfPlayingBanjo('bob')).toBeFalsy();
   });
 });
