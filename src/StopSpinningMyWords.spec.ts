@@ -10,4 +10,9 @@ describe('Spin the words', () => {
     let wordSpiner = new WordSpiner();
     expect(wordSpiner.spinWords('warriors')).toBe('sroirraw');
   });
+
+  it("should revert 'another' to 'rehtona'", () => {
+    let wordSpiner = new WordSpiner();
+    expect(wordSpiner.spinWords('another')).toBe('rehtona');
+  });
 });
