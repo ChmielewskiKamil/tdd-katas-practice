@@ -24,15 +24,20 @@ describe('Spin single word', () => {
 });
 
 describe('Spin multiple words', () => {
-  it("should revert 'another warriors' to 'rehtona sroirraw'", () => {
+  beforeEach(() => {
     wordSpiner = new WordSpiner();
+  });
+
+  it("should revert 'another warriors' to 'rehtona sroirraw'", () => {
     expect(wordSpiner.spinWords('another warriors')).toBe('rehtona sroirraw');
   });
 
   it("should revert 'Hey fellow warriors' to 'Hey wollef sroirraw'", () => {
-    wordSpiner = new WordSpiner();
     expect(wordSpiner.spinWords('Hey fellow warriors')).toBe(
       'Hey wollef sroirraw',
     );
+  });
+  it("should revert 'This is a test' to 'This is a test'", () => {
+    expect(wordSpiner.spinWords('This is a test')).toBe('This is a test');
   });
 });
