@@ -28,4 +28,11 @@ describe('Spin multiple words', () => {
     wordSpiner = new WordSpiner();
     expect(wordSpiner.spinWords('another warriors')).toBe('rehtona sroirraw');
   });
+
+  it("should revert 'Hey fellow warriors' to 'Hey wollef sroirraw'", () => {
+    wordSpiner = new WordSpiner();
+    expect(wordSpiner.spinWords('Hey fellow warriors')).toBe(
+      'Hey wollef sroirraw',
+    );
+  });
 });
