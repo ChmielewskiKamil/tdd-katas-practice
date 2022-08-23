@@ -6,7 +6,7 @@ describe('Spin the words', () => {
     expect(wordSpiner).toBeDefined();
   });
 
-  it('should revert single word', () => {
+  it("should revert single word 'warriors' to 'sroirraw'", () => {
     let wordSpiner = new WordSpiner();
     expect(wordSpiner.spinWords('warriors')).toBe('sroirraw');
   });
