@@ -17,4 +17,8 @@ describe('banjo player check', () => {
   it("should be able to tell that 'bob' doesn't play banjo", () => {
     expect(banjoChecker.checkIfPlayingBanjo('bob')).toBeFalsy();
   });
+
+  it("should know that the casing doesn't make a difference", () => {
+    expect(banjoChecker.checkIfPlayingBanjo('Rob')).toBeTruthy();
+  });
 });
