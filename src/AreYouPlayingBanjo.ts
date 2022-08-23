@@ -1,5 +1,7 @@
 export class BanjoChecker {
-  checkIfPlayingBanjo(name: string): boolean {
-    return name[0] === 'r' || name[0] === 'R' ? true : false;
+  checkIfPlayingBanjo(name: string): string {
+    return name[0] === 'r' || name[0] === 'R'
+      ? `${name} plays banjo`
+      : `${name} does not play banjo`;
   }
 }
