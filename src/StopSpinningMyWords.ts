@@ -1,5 +1,7 @@
+import { stringify } from 'querystring';
+
 export class WordSpiner {
   spinWords(str: string): string {
-    return 'sroirraw';
+    return str.split('').reverse().join('');
   }
 }
