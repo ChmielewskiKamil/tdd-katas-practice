@@ -6,10 +6,11 @@ export class WordSpiner {
   }
 
   spinWords(str: string): string {
-    let words = str.split(' ');
-    let reversedWords: string[] = [];
+    const words = str.split(' ');
+    const reversedWords: string[] = [];
     words.forEach((word) => {
-      let singleReversedWord = word.length > 4 ? this.reverseWord(word) : word;
+      const singleReversedWord =
+        word.length > 4 ? this.reverseWord(word) : word;
       reversedWords.push(singleReversedWord);
     });
 

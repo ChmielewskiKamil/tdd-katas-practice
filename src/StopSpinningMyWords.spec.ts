@@ -40,4 +40,10 @@ describe('Spin multiple words', () => {
   it("should revert 'This is a test' to 'This is a test'", () => {
     expect(wordSpiner.spinWords('This is a test')).toBe('This is a test');
   });
+
+  it("should revert 'This is another test' to 'This is rehtona test'", () => {
+    expect(wordSpiner.spinWords('This is another test')).toBe(
+      'This is rehtona test',
+    );
+  });
 });
