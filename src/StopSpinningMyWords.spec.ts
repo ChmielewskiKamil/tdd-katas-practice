@@ -1,18 +1,20 @@
 import { WordSpiner } from './StopSpinningMyWords';
 
+let wordSpiner: WordSpiner;
 describe('Spin the words', () => {
+  beforeEach(() => {
+    wordSpiner = new WordSpiner();
+  });
+
   it('exists', () => {
-    let wordSpiner = new WordSpiner();
     expect(wordSpiner).toBeDefined();
   });
 
   it("should revert single word 'warriors' to 'sroirraw'", () => {
-    let wordSpiner = new WordSpiner();
     expect(wordSpiner.spinWords('warriors')).toBe('sroirraw');
   });
 
   it("should revert 'another' to 'rehtona'", () => {
-    let wordSpiner = new WordSpiner();
     expect(wordSpiner.spinWords('another')).toBe('rehtona');
   });
 });
