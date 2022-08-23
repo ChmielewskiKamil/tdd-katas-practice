@@ -6,6 +6,13 @@ export class WordSpiner {
   }
 
   spinWords(str: string): string {
-    return str.length > 4 ? this.reverseWord(str) : str;
+    let words = str.split(' ');
+    let reversedWords: string[] = [];
+    words.forEach((word) => {
+      let singleReversedWord = word.length > 4 ? this.reverseWord(word) : word;
+      reversedWords.push(singleReversedWord);
+    });
+
+    return reversedWords.join(' ');
   }
 }
