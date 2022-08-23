@@ -17,4 +17,8 @@ describe('Spin the words', () => {
   it("should revert 'another' to 'rehtona'", () => {
     expect(wordSpiner.spinWords('another')).toBe('rehtona');
   });
+
+  it('should only revert words longer than 4 letters', () => {
+    expect(wordSpiner.spinWords('is')).toBe('is');
+  });
 });
