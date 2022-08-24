@@ -15,19 +15,23 @@ describe('Tower builder', () => {
     expect(towerBuilder.buildTower(1)).toStrictEqual(['*']);
   });
 
-  it("should return ['*', '***'] when input is 2", () => {
-    expect(towerBuilder.buildTower(2)).toStrictEqual(['*', '***']);
+  it("should return [' * ', '***'] when input is 2", () => {
+    expect(towerBuilder.buildTower(2)).toStrictEqual([' * ', '***']);
   });
 
-  it("should return ['*', '***', '*****'] when input is 3", () => {
-    expect(towerBuilder.buildTower(3)).toStrictEqual(['*', '***', '*****']);
-  });
-
-  it("should return ['*', '***', '*****', '*******'] when input is 4", () => {
-    expect(towerBuilder.buildTower(4)).toStrictEqual([
-      '*',
-      '***',
+  it("should return ['   *   ', '  ***  ', '*****'] when input is 3", () => {
+    expect(towerBuilder.buildTower(3)).toStrictEqual([
+      '  *  ',
+      ' *** ',
       '*****',
+    ]);
+  });
+
+  it("should return ['    *    ', '   ***   ', '  *****  ', '*******'] when input is 4", () => {
+    expect(towerBuilder.buildTower(4)).toStrictEqual([
+      '   *   ',
+      '  ***  ',
+      ' ***** ',
       '*******',
     ]);
   });
