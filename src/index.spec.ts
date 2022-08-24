@@ -1,18 +1,21 @@
 import { TowerBuilder } from './index';
 
+let towerBuilder: TowerBuilder;
+
 describe('Tower builder', () => {
+  beforeEach(() => {
+    towerBuilder = new TowerBuilder();
+  });
+
   it('exists', () => {
-    let towerBuilder = new TowerBuilder();
     expect(towerBuilder).toBeDefined;
   });
 
   it("should return ['*'] when input is 1", () => {
-    let towerBuilder = new TowerBuilder();
     expect(towerBuilder.buildTower(1)).toStrictEqual(['*']);
   });
 
   it("should return ['*', '***'] when input is 2", () => {
-    let towerBuilder = new TowerBuilder();
     expect(towerBuilder.buildTower(2)).toStrictEqual(['*', '***']);
   });
 });
