@@ -10,4 +10,9 @@ describe('Tower builder', () => {
     let towerBuilder = new TowerBuilder();
     expect(towerBuilder.buildTower(1)).toStrictEqual(['*']);
   });
+
+  it("should return ['*', '***'] when input is 2", () => {
+    let towerBuilder = new TowerBuilder();
+    expect(towerBuilder.buildTower(2)).toStrictEqual(['*', '***']);
+  });
 });
