@@ -22,4 +22,13 @@ describe('Tower builder', () => {
   it("should return ['*', '***', '*****'] when input is 3", () => {
     expect(towerBuilder.buildTower(3)).toStrictEqual(['*', '***', '*****']);
   });
+
+  it("should return ['*', '***', '*****', '*******'] when input is 4", () => {
+    expect(towerBuilder.buildTower(4)).toStrictEqual([
+      '*',
+      '***',
+      '*****',
+      '*******',
+    ]);
+  });
 });
