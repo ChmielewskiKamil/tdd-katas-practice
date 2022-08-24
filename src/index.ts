@@ -1,6 +1,6 @@
 export class TowerBuilder {
   buildTower(numberOfFloors: number): string[] {
-    let starTower: string[] = [];
+    const starTower: string[] = [];
 
     if (numberOfFloors === 1) {
       return ['*'];
