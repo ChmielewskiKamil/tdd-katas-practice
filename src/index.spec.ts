@@ -1,3 +1,8 @@
+import { TowerBuilder } from './index';
+
 describe('Tower builder', () => {
-  expect(towerBuilder).toBeDefined();
+  it('exists', () => {
+    let towerBuilder = new TowerBuilder();
+    expect(towerBuilder).toBeDefined;
+  });
 });
