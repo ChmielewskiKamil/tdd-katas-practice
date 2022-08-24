@@ -6,11 +6,14 @@ export class TowerBuilder {
       return ['*'];
     } else if (numberOfFloors > 1) {
       starTower.push('*');
-      let starsToAppend: string = '';
-      for (let floor = 0; floor < numberOfFloors + 1; floor++) {
-        starsToAppend += '*';
+      console.log(starTower);
+      // we need to start at 0, because star tower array is indexed from 0
+      // because of that we need to subtract 1 from the number of floors
+      for (let floor = 0; floor < numberOfFloors - 1; floor++) {
+        console.log(`Star tower before adding: ${starTower}`);
+        starTower.push(starTower[floor] + '**');
+        console.log(`Star tower after adding: ${starTower}`);
       }
-      starTower.push(starsToAppend);
       return starTower;
     } else {
       return [''];
