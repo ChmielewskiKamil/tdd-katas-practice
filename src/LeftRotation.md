@@ -10,11 +10,11 @@ rotateLeft has the following parameters:
 - int d: the amount to rotate by
 - int arr[n]: the array to rotate
 
-The first line contains two space-separated integers that denote n, the number of integers, and d, the number of left rotations to perform.
-The second line contains n space-separated integers that describe arr[].
+The first line contains the number of integers, and d, the number of left rotations to perform.
+The second line contains arr[].
 
 Sample Input:
-5 4
+4
 1 2 3 4 5
 
 Sample Output:
