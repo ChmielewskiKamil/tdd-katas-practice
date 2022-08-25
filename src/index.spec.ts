@@ -7,6 +7,6 @@ describe('Rotate array', () => {
   });
   it('should rotate [1] to [1]', () => {
     let arrayRotator = new ArrayRotator();
-    expect(arrayRotator.rotateLeft(1, 1, [1])).toStrictEqual([1]);
+    expect(arrayRotator.rotateLeft(1, [1])).toStrictEqual([1]);
   });
 });
