@@ -1,10 +1,16 @@
 export class ArrayRotator {
   rotateLeft(numberOfRotations: number, elements: number[]): number[] {
-    let elementToMove = elements.shift();
-    if (elementToMove !== undefined) {
-      elements.push(elementToMove);
-      return elements;
-    }
-    return elements;
+    let rotatedElements: number[] = [];
+    elements.forEach(() => {
+      let elementToMove = elements.shift();
+      if (elementToMove !== undefined) {
+        elements.push(elementToMove);
+        console.log(elements);
+        rotatedElements = elements;
+      } else {
+        return elements;
+      }
+    });
+    return rotatedElements;
   }
 }
