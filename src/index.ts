@@ -1,5 +1,9 @@
 export class ArrayRotator {
-  rotateLeft(numberOfRotations: number, elements: number[]): number[] {
+  rotateLeft(
+    numberOfElements: number,
+    numberOfRotations: number,
+    elements: number[],
+  ): number[] {
     let rotatedElements: number[] = [];
     elements.forEach(() => {
       let elementToMove = elements.shift();
