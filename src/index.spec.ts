@@ -1,8 +1,8 @@
 import { ArrayRotator } from './index';
 
 describe('Rotate array', () => {
-  let arrayRotator = new ArrayRotator();
   it('exists', () => {
+    let arrayRotator = new ArrayRotator();
     expect(arrayRotator).toBeDefined();
   });
 });
